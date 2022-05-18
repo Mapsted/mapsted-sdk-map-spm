@@ -8,11 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "MapstedMap",
-            targets: ["MapstedMapWrapper"]
-        ),
-        .library(
-            name: "coremap",
-            targets: ["coremapWrapper"]
+            targets: ["MapstedMap"]
         )
     ],
     dependencies: [
@@ -34,31 +30,18 @@ let package = Package(
                 name: "MapSDK",
                 url: "https://github.com/Mapsted/mapsted-sdk-core-map-spm",
                 .exact("4.6.2")
+            ),
+            .package(
+                name: "coremap",
+                url: "https://github.com/Mapsted/mapsted-sdk-map-base",
+                .exact("4.6.2")
             )
+            
     ],
     targets: [
-        .target(name: "MapstedMapWrapper",
-                dependencies: [
-                    .target(name: "MapstedMap"),
-                    .target(name: "coremap"),
-                    .product(name: "AWSS3", package: "AWSiOSSDKV2"),
-                    .product(name: "MapSDK", package: "MapSDK"),
-                    .product(name: "MapstedCore", package: "MapstedCore")
-                ]
-        ),
         .binaryTarget(
             name: "MapstedMap",
             path: "MapstedMap.xcframework"
-        ),
-        .target(name: "coremapWrapper",
-                dependencies: [
-                    .target(name: "coremap"),
-                    .product(name: "AWSS3", package: "AWSiOSSDKV2")
-                ]
-        ),
-        .binaryTarget(
-            name: "coremap",
-            path: "coremap.xcframework"
         )
     ])
 
