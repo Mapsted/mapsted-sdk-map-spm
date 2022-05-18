@@ -1,0 +1,4 @@
+framework module coremap {
+  header "coremap-Swift.h"
+  requires objc
+}
