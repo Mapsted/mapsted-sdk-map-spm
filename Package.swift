@@ -9,6 +9,10 @@ let package = Package(
         .library(
             name: "MapstedMap",
             targets: ["MapstedMapWrapper"]
+        ),
+        .library(
+            name: "coremap",
+            targets: ["coremapWrapper"]
         )
     ],
     dependencies: [
@@ -45,6 +49,12 @@ let package = Package(
         .binaryTarget(
             name: "MapstedMap",
             path: "MapstedMap.xcframework"
+        ),
+        .target(name: "coremapWrapper",
+                dependencies: [
+                    .target(name: "coremap"),
+                    .product(name: "AWSS3", package: "AWSiOSSDKV2")
+                ]
         ),
         .binaryTarget(
             name: "coremap",
