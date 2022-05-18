@@ -12,8 +12,6 @@ let package = Package(
         )
     ],
     dependencies: [
-            // Here we define our package's external dependencies
-            // and from where they can be fetched:
             .package(
                 name: "AWSiOSSDKV2",
                 url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
