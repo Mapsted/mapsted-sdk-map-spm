@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lo34Vnmbgx2mh7lVMh8FIbpCapE=
+		75hOfGx7LueTbZcjo3p7NAXeKgw=
 		</data>
 		<key>Modules/coremap.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/coremap.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZBwU3zCnfqviucbNxZCW9q8EF9A=
+		52WkhL+gBV5wGri04n3EmDO3hc4=
 		</data>
 		<key>Modules/coremap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/coremap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9LrjAu43o+jiMVFb0nA0+6BtJM0=
+		IG5g6w+t5qZpeTWaMcTDebn5U7w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2KFuwT2sPE+zVvG77/3IhVRDcawCkm2p+0iD42WS40=
+			ybksyrtJJsFxTa4lMxZeEHAIxRliStV/JN68ssCU/mE=
 			</data>
 		</dict>
 		<key>Modules/coremap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c6ZIKlsNgK/4YsqJTY9SzQNgyaOCs8iLQr4nquDgxOk=
+			fZm9Z7NC8mv2AZEwZ3l/d5Ld85mdVZuudoWG9tFyAqY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
