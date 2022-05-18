@@ -1,4 +1,0 @@
-framework module MapstedMap {
-  header "MapstedMap-Swift.h"
-  requires objc
-}

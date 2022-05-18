@@ -1,3 +1,0 @@
-module MapPrivate {
-    export *
-}
