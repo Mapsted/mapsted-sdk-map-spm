@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "MapstedMap",
-            targets: ["MapstedMap"]
+            targets: ["MapstedMapWrapper"]
         )
     ],
     dependencies: [
@@ -38,6 +38,15 @@ let package = Package(
             
     ],
     targets: [
+        .target(name: "MapstedMapWrapper",
+                dependencies: [
+                    .target(name: "MapstedMap"),
+                    .product(name: "AWSS3", package: "AWSiOSSDKV2"),
+                    .product(name: "MapstedCore", package: "MapstedCore"),
+                    .product(name: "MapSDK", package: "MapSDK"),
+                    .product(name: "coremap", package: "coremap")
+                ]
+        ),
         .binaryTarget(
             name: "MapstedMap",
             path: "MapstedMap.xcframework"
